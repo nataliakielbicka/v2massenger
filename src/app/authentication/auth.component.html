@@ -1,1 +1,14 @@
-<h1>auth stuff</h1>
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a routerLinkActive="active" class="nav-link" [routerLink]="['sign-up']">Signup</a>
+  </li>
+  <li class="nav-item">
+    <a routerLinkActive="active" class="nav-link" [routerLink]="['sign-in']">Signin</a>
+  </li>
+  <li class="nav-item">
+    <a routerLinkActive="active" class="nav-link" [routerLink]="['logout']">Logout</a>
+  </li>
+</ul>
+<div class="row">
+  <router-outlet></router-outlet>
+</div>

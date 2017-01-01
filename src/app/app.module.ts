@@ -11,8 +11,8 @@ import {MessagesComponent} from "./messages/messages.component";
 import {AuthComponent} from "./authentication/auth.component";
 import {NavbarComponent} from "./navbar.component";
 import {routing} from "./app.routing";
-import { SignInComponent } from './sign-in/sign-in.component';
-import { SignUpComponent } from './sign-up/sign-up.component';
+import { SignInComponent } from './authentication/sign-in/sign-in.component';
+import { SignUpComponent } from './authentication/sign-up/sign-up.component';
 
 @NgModule({
   declarations: [
