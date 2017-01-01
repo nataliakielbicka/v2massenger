@@ -1,0 +1,14 @@
+<form (ngSubmit)="onSubmit(f)" action="" #f="ngForm">
+  <div class="form-group">
+    <label for="content"> Write a message </label>
+    <input
+      type="text"
+      id="content"
+      class="form-control"
+      ngModel
+      name="content"
+      required
+    >
+  </div>
+  <button class="btn-primary" type="submit">Save!</button>
+</form>
