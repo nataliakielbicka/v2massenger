@@ -11,8 +11,8 @@ export class AuthService {
     console.log(this.user);
   }
 
-  addUser(){
-    console.log('sth');
+  addUser(user){
+    this.user = user;
   }
 
 }

@@ -14,10 +14,10 @@ export class SignUpComponent implements OnInit {
   user:User;
 
   constructor(private authService: AuthService) {
-    this.authService.user = new User('Adam', 'John', 'aaa', 'aaa@yaho.eu', 'abc123');
-   }
 
-  getUser():void {
+  }
+
+  getUser(){
     this.authService.getUser()
   }
 
@@ -27,6 +27,7 @@ export class SignUpComponent implements OnInit {
 
   onSubmit(form: NgForm){
     const newUser = new User(form.value.firstname, form.value.lastname, form.value.username, form.value.email, form.value.password);
+    console.log(newUser);
     this.authService.addUser(newUser);
     form.resetForm();
   }
