@@ -1,15 +1,15 @@
 <nav class="navbar navbar-dark bg-primary">
 
   <div class="container">
-    <a class="navbar-brand" href="#">Angular2 Messenger App</a>
+    <a [routerLink]="['messages']" class="navbar-brand" href="#">Angular2 Messenger App</a>
 
     <!-- Links -->
     <ul class="nav navbar-nav float-xs-right">
       <li class="nav-item">
-        <a routerLinkActive="active" class="nav-item nav-link" [routerLink]="['/signup']">Sign up</a>
+        <a routerLinkActive="active" class="nav-item nav-link" [routerLink]="['signup']">Sign up</a>
       </li>
       <li class="nav-item">
-        <a routerLinkActive="active" class="nav-item nav-link" [routerLink]="['/signin']">Sign in</a>
+        <a routerLinkActive="active" class="nav-item nav-link" [routerLink]="['signin']">Sign in</a>
       </li>
     </ul>
   </div>

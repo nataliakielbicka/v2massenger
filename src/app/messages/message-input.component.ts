@@ -5,7 +5,8 @@ import {NgForm} from "@angular/forms";
 
 @Component({
   selector: 'message-input',
-  templateUrl: './message-input.component.html'
+  templateUrl: './message-input.component.html',
+  styleUrls: ['./message-input.component.css']
 })
 export class MessageInputComponent {
   constructor(private messageService: MessageService){}
