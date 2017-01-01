@@ -2,16 +2,18 @@
   <!--<div class="card-header">
     Message
   </div>-->
-  <div class="card-block" [ngStyle]="{backgroundColor: color}" (mouseenter)="color='#b3ffe6'" (mouseleave)="color='#e6fff7'">
+  <div class="card-block text-md-left" [ngStyle]="{backgroundColor: color}" (mouseenter)="color='#b3ffe6'" (mouseleave)="color='#e6fff7'">
     <!-- <h4 class="card-title">Special title treatment</h4>-->
     <p class="card-text">{{message.content}}</p>
     <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
   </div>
   <div class="card-footer text-muted">
-    <div class="author">
-      {{message.username}}
+    <div class="author text-md-left col-md-6">
+      <i>
+        {{message.username}}
+      </i>
     </div>
-    <div class="action">
+    <div class="action text-md-right col-md-6">
       <a (click)="editMessage(); false" href="#">Edit</a>
       <a (click)="deleteMessage(); false" href="#">Delete</a>
     </div>
