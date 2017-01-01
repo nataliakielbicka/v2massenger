@@ -1,29 +1,23 @@
 import { Component, OnInit } from '@angular/core';
-import { User } from '../user';
-import { SignupService } from './signup.service';
+import { User } from '../user.model';
+import {AuthService} from "../auth.service";
 
 @Component({
   selector: 'app-sign-up',
   templateUrl: './sign-up.component.html',
   styleUrls: ['./sign-up.component.css'],
-  providers: [SignupService]
+  providers: [AuthService]
 })
 export class SignUpComponent implements OnInit {
 
-  user:User[] = [];
+  user:User;
 
-  constructor(private signupService: SignupService) {
-    this.user = new User[{
-      firstname: 'Adam', 
-      lastname: 'John',
-      username: 'aaa',
-      email: 'aaa@yaho.eu'
-      password: 'abc123'
-    }];
+  constructor(private authService: AuthService) {
+    this.user = new User('Adam', 'John', 'aaa', 'aaa@yaho.eu', 'abc123');
    }
 
   getUser():void {
-    this.signupService.getUser(User.firstname, lastname, username, email, password);
+    this.authService.getUser()
   }
 
   ngOnInit() {

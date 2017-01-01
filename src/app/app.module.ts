@@ -13,7 +13,7 @@ import {NavbarComponent} from "./navbar.component";
 import {routing} from "./app.routing";
 import { SignInComponent } from './authentication/sign-in/sign-in.component';
 import { SignUpComponent } from './authentication/sign-up/sign-up.component';
-import { SignupService } from './authentication/sign-up/signup.service';
+import {AuthService} from "./authentication/auth.service";
 
 @NgModule({
   declarations: [
@@ -33,7 +33,7 @@ import { SignupService } from './authentication/sign-up/signup.service';
     HttpModule,
     routing
   ],
-  providers: [MessageService, SignupService],
+  providers: [MessageService, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
