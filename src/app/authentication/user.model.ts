@@ -3,7 +3,8 @@ export class User{
   lastname: string;
   username: string;
   email: string;
-   password: string;
+  password: string;
+  
   constructor(firstname: string, lastname: string, username: string, email: string, password: string){
     this.firstname = firstname;
     this.lastname = lastname;
