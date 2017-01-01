@@ -4,11 +4,7 @@ import {MessageService} from "./message.service";
 
 @Component({
   selector: 'message-list',
-  template: `<app-message
-        [message]="message"
-        (editClicked)="message.content = $event"
-        *ngFor="let message of messages">
-      </app-message>`
+  templateUrl: './message-list.component.html'
 })
 export class MessageListComponent implements OnInit{
   constructor(private messageService: MessageService){}
