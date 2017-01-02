@@ -14,6 +14,7 @@ import {routing} from "./app.routing";
 import { SignInComponent } from './authentication/sign-in/sign-in.component';
 import { SignUpComponent } from './authentication/sign-up/sign-up.component';
 import {AuthService} from "./authentication/auth.service";
+import { EqualValidator } from './authentication/pass-validator.directive';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {AuthService} from "./authentication/auth.service";
     AuthComponent,
     NavbarComponent,
     SignInComponent,
-    SignUpComponent
+    SignUpComponent,
+    EqualValidator
   ],
   imports: [
     BrowserModule,
